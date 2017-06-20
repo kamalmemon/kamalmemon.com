@@ -2250,7 +2250,7 @@
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
-		margin-bottom: -3em;
+		margin-bottom: -1em;
 	}
 
 	table {
