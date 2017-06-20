@@ -20,18 +20,38 @@
 		xsmall: '(max-width: 480px)'
 	});
 
+
+	function empty() {
+    
+	
+    if (nameVal == "" || nameVal == "" || msgVal ) {
+        return false;
+    };
+}
+
 	$(function() {
 
 		$("#sendMessage").on("click", function () {
-			message = $("#contactform").serialize();
-			$.ajax({
-				url: "https://formspree.io/kamalmemon11@gmail.com",
-				method: "POST",
-				data: { message: message },
-				dataType: "json"
-			});			
-			$('#msgAlert').fadeIn();
-			$('#msgAlert').delay(3000).fadeOut('slow');
+			nameVal = $("#name").val();
+			emailVal = $("#email").val();
+			msgVal = $("#message").val();
+
+			if (nameVal == "" || emailVal == "" || msgVal == "") {
+				$('#msgFail').fadeIn();
+				$('#msgFail').delay(3000).fadeOut('slow');
+    		}
+			else
+			{
+				message = $("#contactform").serialize();
+				$.ajax({
+					url: "https://formspree.io/kamalmemon11@gmail.com",
+					method: "POST",
+					data: { message: message },
+					dataType: "json"
+				});			
+				$('#msgSuccess').fadeIn();
+				$('#msgSuccess').delay(3000).fadeOut('slow');
+			}
 			return false;
 		});
 

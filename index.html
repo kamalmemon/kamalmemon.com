@@ -197,9 +197,11 @@
 							<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 						</div>
 						<ul class="actions" style="padding-top: 0.5em;">
-							<li><input type="submit" id="sendMessage" value="Send Message" /></li>
+							<li><input type="submit" id="sendMessage" value="Send Message" onClick="return empty()" /></li>
+						
 						</ul>
-						<p id="msgAlert" style="display: none; color:#49bf9d">Thanks for the message! I 'll be in touch promptly.</p>
+						<p id="msgFail" style="display: none; color: #D8000C;">Please fill all fields.</p>
+						<p id="msgSuccess" style="display: none; color:#49bf9d">Thanks for the message! I 'll be in touch promptly.</p>
 					</form>
 				</div>
 				<div class="4u$ 12u$(small)">
