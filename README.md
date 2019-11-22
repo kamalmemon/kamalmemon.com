@@ -1,6 +1,8 @@
-Kamal Memon.
+I currently use this repo as a hosting server.
 
-This is a short professional bio page of mine. 
+## Retired
+
+This was a short professional bio page of mine. 
 I bought the kamalmemon.com domian and didnt know what to put there so I made/customized this.
 
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
